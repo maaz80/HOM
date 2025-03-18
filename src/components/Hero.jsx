@@ -39,7 +39,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center text-white overflow-hidden" id="hero">
       <video
         className="absolute w-full h-full object-cover z-0"
-        src="/src/video/LandingPage.mp4"
+        src="/video/LandingPage.mp4"
         autoPlay
         loop
         muted
