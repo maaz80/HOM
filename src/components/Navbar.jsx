@@ -1,4 +1,3 @@
-// File: src/components/Navbar.jsx
 import { useState, useEffect } from 'react';
 
 const navLinks = [

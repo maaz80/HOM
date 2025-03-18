@@ -1,4 +1,3 @@
-// File: src/components/Users.jsx
 import { useEffect, useState, useMemo } from 'react';
 import useDebounce from '../hooks/useDebounce';
 
@@ -13,6 +12,7 @@ export default function Users() {
       .then(setUsers);
   }, []);
 
+//   Search filter 
   const filtered = useMemo(() => {
     const lower = debouncedQuery.toLowerCase();
     return users.filter((u) => u.name.toLowerCase().includes(lower));
@@ -38,6 +38,7 @@ export default function Users() {
             className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 text-white"
           >
             <div className="flex items-center gap-4 mb-4">
+                {/* Name Icons  */}
               <img
                 src={`https://api.dicebear.com/8.x/initials/svg?seed=${encodeURIComponent(user.name)}`}
                 alt={user.name}

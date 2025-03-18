@@ -1,5 +1,3 @@
-// File: src/App.jsx
-import { useEffect, useState, useMemo } from 'react';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Pricing from './components/Pricing';

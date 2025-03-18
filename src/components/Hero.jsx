@@ -1,4 +1,3 @@
-// File: src/components/Hero.jsx
 import { useEffect, useState } from 'react';
 
 const typingText = [
@@ -13,6 +12,7 @@ export default function Hero() {
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+//   Typing animation 
   useEffect(() => {
     const currentText = typingText[index % typingText.length];
     const timeout = setTimeout(() => {

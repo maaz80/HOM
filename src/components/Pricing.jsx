@@ -1,4 +1,3 @@
-// File: src/components/Pricing.jsx
 const pricing = [
     {
       plan: 'Basic',
